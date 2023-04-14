@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="webdriver io page" timestamp="2023-04-14T14:40:44" time="6.196" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="webdriver.io page"/>
+      <property name="capabilities" value="chrome.112_0_5615_49.macosx"/>
+      <property name="file" value="file://./test/specs/basic.ts"/>
+    </properties>
+    <testcase classname="chrome.112_0_5615_49.macosx.webdriver.io_page" name="should click the Join the team button and should be redirected to the carrier page" time="3.452">
+      <system-out><![CDATA[
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {"url":"https://getir.com/us/"}
+RESULT: {"url":"https://getir.com/us/"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+RESULT: {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/65232a1b-84ed-4b4d-b007-9d3e584c7ff0/click - {}
+RESULT: {}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {}
+RESULT: {}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.112_0_5615_49.macosx.webdriver.io_page" name="on the carrier page should click the all opportunities button and search for the Tax Team Lead Position" time="2.74">
+      <system-out><![CDATA[
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {"url":"https://getir.com/us/"}
+RESULT: {"url":"https://getir.com/us/"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+RESULT: {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/9c7e718e-9e8b-4cf4-bf7f-f205a59d1595/click - {}
+RESULT: {}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {}
+RESULT: {}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {}
+RESULT: {}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"xpath","value":".//a[contains(., \"All opportunities\") and not(.//a)]"}
+RESULT: {"using":"xpath","value":".//a[contains(., \"All opportunities\") and not(.//a)]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/040dcbee-fe9c-4591-a3f7-c707a2ebe752/click - {}
+RESULT: {}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/url - {}
+RESULT: {}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"css selector","value":"#search_input"}
+RESULT: {"using":"css selector","value":"#search_input"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/9d2a1fd8-07dd-42ea-8c9c-2df8adc18390/value - {"text":"Tax"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"css selector","value":"#search_input"}
+RESULT: {"text":"Tax"}
+RESULT: {"using":"css selector","value":"#search_input"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9d2a1fd8-07dd-42ea-8c9c-2df8adc18390","ELEMENT":"9d2a1fd8-07dd-42ea-8c9c-2df8adc18390"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9d2a1fd8-07dd-42ea-8c9c-2df8adc18390","ELEMENT":"9d2a1fd8-07dd-42ea-8c9c-2df8adc18390"}]}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/9d2a1fd8-07dd-42ea-8c9c-2df8adc18390/clear - {}
+RESULT: {}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/9d2a1fd8-07dd-42ea-8c9c-2df8adc18390/value - {"text":"Tax"}
+RESULT: {"text":"Tax"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/actions - {}
+RESULT: {}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/elements - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/elements - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: GET /session/9be8f3dd769ebbbdb734cfd89e6cb6aa/element/c8fbf576-146f-4a1e-a93d-e0ddf70d6443/css/style - {}
+RESULT: {}
+COMMAND: DELETE /session/9be8f3dd769ebbbdb734cfd89e6cb6aa - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
