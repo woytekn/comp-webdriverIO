@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"esModuleInterop": true,
 		"moduleResolution": "node",
-		"module": "commonjs",
+		"module": "CommonJS",
 		"types": [
 			"node",
 			"@wdio/globals/types",
@@ -10,5 +10,8 @@
 			"@wdio/mocha-framework"
 		],
 		"target": "ES6"
+	},
+	"ts-node": {
+		"esm": true
 	}
 }

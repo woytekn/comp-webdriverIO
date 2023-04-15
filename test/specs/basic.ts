@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import LoginPage from '../pageobjects/login.page';
 import LandingPage from '../pageobjects/landing.page';
 import CareerPage from '../pageobjects/career.page';
+const percySnapshot = require('@percy/webdriverio');
 
 interface TestData {
 	careerGetirUrl: string;
@@ -22,6 +23,7 @@ describe('Career Page Tests', () => {
 
 	it('should click the Join the team button and should be redirected to the carrier page', async () => {
 		await LandingPage.clickJoinTheTeamButton();
+		await percySnapshot(browser, 'Login Page');
 		const currentUrl = await browser.getUrl();
 		expect(currentUrl).to.include(testData.careerGetirUrl);
 	});

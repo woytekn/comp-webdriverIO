@@ -1,97 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="webdriver io page" timestamp="2023-04-15T11:19:11" time="6.903" tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Career Page Tests" timestamp="2023-04-15T23:04:05" time="6.507" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="webdriver.io page"/>
+      <property name="suiteName" value="Career Page Tests"/>
       <property name="capabilities" value="chrome.112_0_5615_49.macosx"/>
       <property name="file" value="file://./test/specs/basic.ts"/>
     </properties>
-    <testcase classname="chrome.112_0_5615_49.macosx.webdriver.io_page" name="should click the Join the team button and should be redirected to the carrier page" time="2.955">
+    <testcase classname="chrome.112_0_5615_49.macosx.Career_Page_Tests" name="should click the Join the team button and should be redirected to the carrier page" time="2.91">
       <system-out><![CDATA[
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/url - {"url":"https://getir.com/us/"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/url - {"url":"https://getir.com/us/"}
 RESULT: {"url":"https://getir.com/us/"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
 RESULT: {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/04584055-17e0-4540-b785-a4ee541eb995/click - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/f3e37f2e-516b-4684-9f9a-dab13c31faad/click - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.112_0_5615_49.macosx.webdriver.io_page" name="on the carrier page should click the all opportunities button and search for the Tax Team Lead Position" time="2.297">
+    <testcase classname="chrome.112_0_5615_49.macosx.Career_Page_Tests" name="should search for the Tax Team Lead position on the career page" time="1.924">
       <system-out><![CDATA[
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/url - {"url":"https://getir.com/us/"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/url - {"url":"https://getir.com/us/"}
 RESULT: {"url":"https://getir.com/us/"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
 RESULT: {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/ddb5b10d-e19a-47c1-a1ad-a4b1a11b5b32/click - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/3a4ab7aa-d0a2-464e-952d-b7f54a857ba4/click - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"xpath","value":".//a[contains(., \"All opportunities\") and not(.//a)]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"xpath","value":".//a[contains(., \"All opportunities\") and not(.//a)]"}
 RESULT: {"using":"xpath","value":".//a[contains(., \"All opportunities\") and not(.//a)]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/4e02b3df-d8d0-4ce4-b7c2-3881154b8cf8/click - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/a2514986-73d0-419b-bb3c-7c77e0866c3a/click - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"#search_input"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"css selector","value":"#search_input"}
 RESULT: {"using":"css selector","value":"#search_input"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61","ELEMENT":"adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61","ELEMENT":"adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61"}]}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61/clear - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11","ELEMENT":"7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11","ELEMENT":"7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11"}]}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11/clear - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/adcaf212-3d85-4cd7-bb4d-b1e3faf6ac61/value - {"text":"Tax"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/7a1aa63e-a5c2-4eb9-af0a-24a5f094fa11/value - {"text":"Tax"}
 RESULT: {"text":"Tax"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/4906438c0baf34d1725b31da256ef913/actions - {}
+COMMAND: DELETE /session/a20131b1167d98d04eee9adf4bf814b4/actions - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
 RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/elements - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/elements - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/element/aa1adaf8-b611-43a5-99c4-232d1cc25d73/css/style - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/element/8062bec8-b7c7-4bd2-bae9-5f04c7276992/css/style - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.112_0_5615_49.macosx.webdriver.io_page" name="mock data and not display the Tax Team Lead position" time="1.649">
+    <testcase classname="chrome.112_0_5615_49.macosx.Career_Page_Tests" name="should not display the Tax Team Lead position when mock data is used" time="1.671">
       <system-out><![CDATA[
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/url - {"url":"https://getir.com/us/"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/url - {"url":"https://getir.com/us/"}
 RESULT: {"url":"https://getir.com/us/"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
 RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/window - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/window - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
 RESULT: {"using":"xpath","value":".//a[contains(., \"Join the team\") and not(.//a)]"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/3b5dfdb8-d1a6-425b-8e37-1cfff71abdb4/click - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/ab737b38-86f0-4483-a0fa-004704283c75/click - {}
 RESULT: {}
-COMMAND: GET /session/4906438c0baf34d1725b31da256ef913/url - {}
+COMMAND: GET /session/a20131b1167d98d04eee9adf4bf814b4/url - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"#search_input"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"css selector","value":"#search_input"}
 RESULT: {"using":"css selector","value":"#search_input"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c","ELEMENT":"d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c","ELEMENT":"d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c"}]}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c/clear - {}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"51389d94-8075-4d4f-971f-97a34fe7f115","ELEMENT":"51389d94-8075-4d4f-971f-97a34fe7f115"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"51389d94-8075-4d4f-971f-97a34fe7f115","ELEMENT":"51389d94-8075-4d4f-971f-97a34fe7f115"}]}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/51389d94-8075-4d4f-971f-97a34fe7f115/clear - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element/d20b8d05-2a3c-47d9-a14e-3c96c6c8e12c/value - {"text":"Tax"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element/51389d94-8075-4d4f-971f-97a34fe7f115/value - {"text":"Tax"}
 RESULT: {"text":"Tax"}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/4906438c0baf34d1725b31da256ef913/actions - {}
+COMMAND: DELETE /session/a20131b1167d98d04eee9adf4bf814b4/actions - {}
 RESULT: {}
-COMMAND: POST /session/4906438c0baf34d1725b31da256ef913/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
+COMMAND: POST /session/a20131b1167d98d04eee9adf4bf814b4/element - {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
 RESULT: {"using":"css selector","value":"div[name=\"Tax Team Lead\"]"}
-COMMAND: DELETE /session/4906438c0baf34d1725b31da256ef913 - {}
+COMMAND: DELETE /session/a20131b1167d98d04eee9adf4bf814b4 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
