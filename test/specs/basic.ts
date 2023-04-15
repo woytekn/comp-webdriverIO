@@ -3,34 +3,44 @@ import LoginPage from '../pageobjects/login.page';
 import LandingPage from '../pageobjects/landing.page';
 import CareerPage from '../pageobjects/career.page';
 
-const careerGetirUrl = 'https://career.getir.com/';
-const valueJobPosition = 'Tax';
-const locatorTaxTeamLead = 'div[name="Tax Team Lead"]';
+interface TestData {
+	careerGetirUrl: string;
+	jobPosition: string;
+	taxTeamLeadLocator: string;
+}
 
-describe('webdriver.io page', () => {
+const testData: TestData = {
+	careerGetirUrl: 'https://career.getir.com/',
+	jobPosition: 'Tax',
+	taxTeamLeadLocator: 'div[name="Tax Team Lead"]',
+};
+
+describe('Career Page Tests', () => {
 	beforeEach(async () => {
 		await LoginPage.open();
 	});
 
 	it('should click the Join the team button and should be redirected to the carrier page', async () => {
 		await LandingPage.clickJoinTheTeamButton();
-		const url = await browser.getUrl();
-		expect(url).to.include(careerGetirUrl);
+		const currentUrl = await browser.getUrl();
+		expect(currentUrl).to.include(testData.careerGetirUrl);
 	});
 
-	it('on the carrier page should click the all opportunities button and search for the Tax Team Lead Position ', async () => {
+	it('should search for the Tax Team Lead position on the career page', async () => {
 		await LandingPage.clickJoinTheTeamButton();
-		let url = await browser.getUrl();
-		expect(url).to.include(careerGetirUrl);
+		const currentUrl = await browser.getUrl();
+		expect(currentUrl).to.include(testData.careerGetirUrl);
+
 		await CareerPage.clickBtnAllOpportinities();
-		url = await browser.getUrl();
-		expect(url).to.include('#job-section');
-		await CareerPage.searchAndPressEnter(valueJobPosition);
+		const jobSectionUrl = await browser.getUrl();
+		expect(jobSectionUrl).to.include('#job-section');
+
+		await CareerPage.searchAndPressEnter(testData.jobPosition);
 		expect(await CareerPage.isTaxTeamLeadVisible()).to.be.true;
 	});
 
-	it('mock data and not display the Tax Team Lead position ', async () => {
-		const taxTeamLeadDiv = await browser.$(locatorTaxTeamLead);
+	it('should not display the Tax Team Lead position when mock data is used', async () => {
+		const taxTeamLeadDiv = await browser.$(testData.taxTeamLeadLocator);
 
 		const mockResponse = require('../../mock.json');
 		const mockCareerPage = await browser.mock(
@@ -38,7 +48,8 @@ describe('webdriver.io page', () => {
 		);
 		await LandingPage.clickJoinTheTeamButton();
 		mockCareerPage.respond(mockResponse);
-		await CareerPage.searchAndPressEnter(valueJobPosition);
+
+		await CareerPage.searchAndPressEnter(testData.jobPosition);
 		expect(await taxTeamLeadDiv.isDisplayed()).to.be.false;
 	});
 });
